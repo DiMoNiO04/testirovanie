@@ -7,14 +7,14 @@ noCities = 123;
 arrEmpty = [];
 
 let result = '';
-const msgArrEmpty =  'Пустой массив';
-const noArr = 'Не массив. На вход должен приниматся массив';
+const MSG_ARR_EMPTY =  'Пустой массив';
+const NO_ARR = 'Не массив. На вход должен приниматся массив';
 
 function outputCitiesInString(arr){
 	if(Array.isArray(arr)){
-		(arr.length === 0) ?  result = msgArrEmpty : result = arr.join(', ') + '.';
+		(arr.length === 0) ?  result = MSG_ARR_EMPTY : result = arr.join(', ') + '.';
 	}else {
-		result = noArr;
+		result = NO_ARR;
 	}
 
 	return result;

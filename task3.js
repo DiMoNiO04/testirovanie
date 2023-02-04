@@ -1,6 +1,6 @@
-//Выполнение задания заняло 22 минуты
+//Выполнение задания заняло 22 минуты + рефакторинг
 
-const errorMessage = 'Не является числом или число отрицательное или число не является целым'
+const ERR_MSG = 'Не является числом или число отрицательное или число не является целым'
 let result = '';
 
 function wordInCase(number){
@@ -10,7 +10,7 @@ function wordInCase(number){
 		if((number >= 5 && number <= 20) || (number%10 >= 5) || (number%10 === 0))result = number + ' компьютеров'
 		if((number < 5 && number % 10 < 5) || (number > 20 && number % 10 < 5)) result = number + ' компьютера';
 	}
-	else result = errorMessage;
+	else result = ERR_MSG;
 
 	return result;
 }
